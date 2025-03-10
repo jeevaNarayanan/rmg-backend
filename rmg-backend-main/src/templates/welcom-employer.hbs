@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .company-logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content p {
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .content strong {
+            color: #333;
+        }
+
+        .best-regards {
+            margin-top: 20px;
+            font-style: italic;
+            color: #95959d;
+            padding-top: 13px;
+            padding-right: 20px;
+            padding-bottom: 17px;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+         .password-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .password-table td {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            {{!-- <img src="{{url}}" alt="{{company.title}}" class="company-logo"> --}}
+            <Center><H1>RMG</H1></Center>
+        </div>
+        <div class="content">
+            <p>Hi <strong>{{user.first_name}} {{user.last_name}}</strong>,</p>
+            <p>Welcome to RMG! We're excited to have you in here.</p>
+            <p>Use the below password to log in to your account</p>
+            <table class="password-table">
+                <tr>
+                    <td><strong>{{randomPassword}}</strong></td>
+                </tr>
+            </table>
+            <p>At RMG, we strive to connect with you. Here's how you can get started:</p>
+            <ul>
+                <li><strong>Complete your profile, connect with others, and make the most of your office experience!</strong>
+            </ul>
+        </div>
+        <div class="best-regards">
+            <p>Regards,</p>
+            <b>RMG Team</b>
+        </div>
+            <div class="footer">
+            <p>If you have any questions, please <a href="mailto:support@rmg.inc">contact us</a>.</p>
+            <p>
+                <a href=`privacy-policy`>Privacy Policy</a> |
+                <a href= `Terms-and-Conditions`>Terms and Conditions</a>
+                 <p>&copy; 2024  RMG All rights reserved.</p>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
